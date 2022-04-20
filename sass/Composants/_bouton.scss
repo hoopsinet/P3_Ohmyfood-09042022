@@ -1,10 +1,10 @@
 button {
     border: 0px;
     border-radius: 20px;
-    box-shadow: 3px 3px 3px 1px;
+    box-shadow: $b-shadow;
     background: linear-gradient($secondary-color, $primary-color);
     color: white;
     width: 50%;
     margin: auto;
     height: 40px;
-   }
+}

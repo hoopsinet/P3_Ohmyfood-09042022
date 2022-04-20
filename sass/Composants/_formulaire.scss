@@ -1,11 +1,20 @@
-input[type="search"] {
-    border: 0px;
-    text-align: center;
-    margin: 0px;
-}
-
-form {
+.form {
     width: 100%;
     text-align : center;
-    background-color: grey;
+    background-color : lighten($fond-foot, 72%);
+    box-shadow : inset 1px 1px 3px lighten($fond-foot, 40%);
+    &__recherche {
+        padding : 15px;
+    }
+    &__input {
+        border: 0px;
+        text-align: center;
+        margin: 0px;
+        background-color : lighten($fond-foot, 72%);
+    }
+    &__titre {
+        padding : 30px 20px;
+        text-align: center;
+        background-color: lighten($fond-foot, 75%);
+}
 }
