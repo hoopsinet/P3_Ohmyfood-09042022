@@ -9,6 +9,9 @@ body {
 h1 {
     margin-top : 0;
 }
+h3 {
+    margin: 0px;
+}
 
 a{
     text-decoration: none;
@@ -17,4 +20,11 @@ a{
 
 ul {
     list-style-type: none;
+}
+
+.fas.fa-heart {
+    display: none;
+}
+.fa-heart {
+    font-size: 27px;
 }

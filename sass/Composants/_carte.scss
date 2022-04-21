@@ -2,23 +2,38 @@
     box-shadow: $b-shadow;
     border-radius: nth($b-radius, 2);
     position : relative;
+    height: 240px;
+    margin-bottom: 20px;
     &__nouveau {
         background-color : $tertiary-color;
         position: absolute;
         top : 10px;
         right : 10px;
-        color : darken($tertiary-color, 30%);
+        color : darken($tertiary-color, 35%);  // Commentaire pour moi darken(color, +%) pour assombrir la couleur (fonction SASS)
         font-weight : 900;
         border-radius : nth($b-radius, 1);
         padding : 0 10px;
         margin : 0;
+        & p {
+            margin: 4px;
 
+        }
     }
     &__img {
         width: 100%;
-        height: 125px;
+        height: 160px;
         object-fit: cover;
         border-top-left-radius: nth($b-radius, 2);
         border-top-right-radius: nth($b-radius, 2);
+   }
+   &__txtcoeur {
+       padding: 15px;
+        & p {
+            margin: 0;
+         }
+        &__regroupement{
+            display: flex;
+            justify-content: space-between;
+        }    
    }
 }
