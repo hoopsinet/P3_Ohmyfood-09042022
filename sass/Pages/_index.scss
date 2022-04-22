@@ -2,7 +2,21 @@
     border-radius: 15px;
     box-shadow:$b-shadow;
     margin-bottom: 25px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    
+    &__numbers {
+       background-color: $primary-color;
+       position: absolute;
+       left : -15px;    
+       padding: 2px 7px;
+       border-radius: 100%;
+       font-weight: bold;
+       color: white;
     }
+}
 
 
     .p-target {

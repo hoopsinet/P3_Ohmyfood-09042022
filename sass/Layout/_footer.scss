@@ -2,4 +2,11 @@ footer {
 	border-top: solid  black 1px;
 	background-color: $fond-foot;
 	color: white;
+	& h3 {
+		font-weight: 400;
+	}
+	& ul {
+		padding : 0;
+		font-weight: bold;
+	}
 }
