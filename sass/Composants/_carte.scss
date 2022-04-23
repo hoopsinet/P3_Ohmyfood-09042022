@@ -1,9 +1,7 @@
-.card {
-    box-shadow: $b-shadow;
-    border-radius: nth($b-radius, 2);
+.card { 
+    @include card; 
     position : relative;
     height: 240px;
-    margin-bottom: 20px;
     &__nouveau {
         background-color : $tertiary-color;
         position: absolute;

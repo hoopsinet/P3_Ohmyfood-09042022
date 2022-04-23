@@ -1,6 +1,12 @@
 header {
   text-align : center;
   padding : 20px 0;
+  position: relative;
+  & i {
+    position: absolute;
+    left: 17px;
+    top: 30px;
+  }
 }
 #logo  {
   width:50%;

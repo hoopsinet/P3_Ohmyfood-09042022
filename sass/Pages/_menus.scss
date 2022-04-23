@@ -3,4 +3,26 @@
 	background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
 }
 
-
+.fontpict {
+	background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+	background-position: center;
+	height: 270px;
+	background-size: cover;
+	position: relative;
+	&__title {
+		position:absolute;
+		bottom : 0;
+		background-color: white;
+		width: 100%;
+		border-top-left-radius: 40px;
+		border-top-right-radius: 40px;
+		display: flex;
+		justify-content: center;
+		justify-content: space-around;
+		padding-top: 30px;
+		padding-bottom: 10px;
+		}
+}
+.cardMenu {
+	@include card;
+}
