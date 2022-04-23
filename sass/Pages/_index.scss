@@ -1,11 +1,13 @@
 .function {
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow:$b-shadow;
     margin-bottom: 25px;
     position: relative;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
+    height: 80px;
+    font-weight: bold;
     
     &__numbers {
        background-color: $primary-color;
@@ -13,9 +15,11 @@
        left : -15px;    
        padding: 2px 7px;
        border-radius: 100%;
-       font-weight: bold;
        color: white;
     }
+    & i {
+        color: lighten($fond-foot, 20%); 
+    } 
 }
 
 

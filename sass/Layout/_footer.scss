@@ -2,11 +2,28 @@ footer {
 	border-top: solid  black 1px;
 	background-color: $fond-foot;
 	color: white;
+	padding: 15px;
 	& h3 {
-		font-weight: 400;
+		font-weight: lighter;
+		font-family: 'Shrikhand', cursive;
 	}
 	& ul {
-		padding : 0;
-		font-weight: bold;
+	 	font-weight: bold;
+		 padding: 0;
+		 & li {
+			 padding-top: 7px;
+		 }
+		}
+}
+address {
+	& a {
+		font-style: normal;
+		color: white;
 	}
+	}
+.fa-utensils {
+	padding-right: 15px;
+}
+.fa-hands-helping {
+	padding-right: 7px;
 }
