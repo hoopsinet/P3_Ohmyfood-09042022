@@ -1,5 +1,5 @@
 @mixin card { 
- box-shadow: $b-shadow;
+    box-shadow: $b-shadow;
     border-radius: nth($b-radius, 2); 
     margin-bottom: 20px;
 }

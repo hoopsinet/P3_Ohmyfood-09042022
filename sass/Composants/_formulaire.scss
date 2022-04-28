@@ -1,7 +1,7 @@
 .form {
     width: 100%;
     text-align : center;
-    background-color : lighten($fond-foot, 72%);
+    background-color : $ligh-fond;
     box-shadow : inset 1px 1px 3px lighten($fond-foot, 40%);
     &__recherche {
         padding : 15px;
@@ -10,7 +10,7 @@
         border: 0px;
         text-align: center;
         margin: 0px;
-        background-color : lighten($fond-foot, 72%);
+        background-color : $ligh-fond;
     }
     &__titre {
         padding : 30px 20px;

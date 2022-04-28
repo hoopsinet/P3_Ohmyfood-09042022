@@ -2,9 +2,14 @@ button {
     border: 0px;
     border-radius: 20px;
     box-shadow: $b-shadow;
+    cursor: pointer;
     background: linear-gradient($secondary-color, $primary-color);
     color: white;
     width: 50%;
     margin: auto;
     height: 40px;
+   &:hover {
+        transform: scale(1,1.1);
+        background: linear-gradient(lighten($secondary-color, 5%), lighten($primary-color, 5%));
+   } 
 }
