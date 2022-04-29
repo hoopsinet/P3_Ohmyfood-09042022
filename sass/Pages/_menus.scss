@@ -23,6 +23,27 @@
 		padding-bottom: 10px;
 		}
 }
+.menu {
+			
+			@for $i from 1 through 10 {
+			&:nth-child(#{$i}) {
+			animation-delay: 100ms * $i;
+			animation-fill-mode: both;
+			}
+		}
+}
 .cardMenu {
-	@include card;
+	@include card; 
+	animation: appear 3s;
+	
+&__price-text {
+	display: flex;
+	justify-content: space-around;
+
+}
+}
+// Surlignage
+.p-target {
+    border-bottom: 3px solid green;
+	width: 35px;	
 }
