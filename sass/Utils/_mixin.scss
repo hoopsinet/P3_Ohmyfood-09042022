@@ -3,3 +3,21 @@
     border-radius: nth($b-radius, 2); 
     margin-bottom: 20px;
 }
+@mixin fontpict(
+    //Variables avec valeur par défaut
+    $background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"),
+	$background-position: center,
+	$height: 270px,
+	$background-size: cover,
+	$position: relative,
+    ) {
+    // règles à appliquer à l'appel de la mixin dont les valeurs sont = aux variables prédéfinies
+    // et possibilité de changer la valeur d'une ou plsrs variables 
+    background-image: $background-image;
+	background-position: $background-position;
+	height: $height;
+	background-size: $background-size;
+	position: $position;  
+}
+
+// 
