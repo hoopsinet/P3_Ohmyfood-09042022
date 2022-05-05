@@ -6,3 +6,65 @@
     100% {transform: scale(1);
     }
 }
+@keyframes spinner-cercle {
+    from {
+        transform: rotate (0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+}
+@keyframes spinner-loader {
+    to {
+        transform: scale(0)
+    }
+}
+    
+
+.spinnerloader {
+    background-color: $tertiary-color;
+    opacity: 70%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+    animation: spinner-loader 0s ease 2s forwards
+    
+}
+.spinner-cercle {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border: 5px dotted $primary-color;
+    border-radius: 50%;
+    animation: spinner-cercle 3s cubic-bezier(1,-0.32, 0.38, 1.07) infinite;
+   
+}
+
+.spinner-3points {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    animation: spinner-cercle reverse 2000ms linear infinite;
+}
+
+    .spinner-point {
+        height: 21px;
+        width:  21px;
+        background-color: $secondary-color;
+        border-radius: 50%;
+     
+        
+    }
