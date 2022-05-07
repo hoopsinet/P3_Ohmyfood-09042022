@@ -1,6 +1,6 @@
 @keyframes appear {
     0%{
-        transform: translateY(50);
+        transform: translateY(50%);
         opacity: 0;
     }
  
@@ -22,6 +22,7 @@
         transform: scale(0)
     }
 }
+// Check qui apparait (grosseur etc..)
 @keyframes checkitems {
     from {
         opacity: 1;
@@ -29,13 +30,17 @@
     }
     to {
         opacity: 1;
-        width: 10%;
+        width: 20%;
     }
 }
-
+.spinnerbackground {
+   position: absolute;
+   opacity: 60%;
+   background-color: $secondary-color;
+   width: 100%;
+   height: 100%;
+}
 .spinnerloader {
-    background-color: $tertiary-color;
-    opacity: 70%;
     position: fixed;
     top: 0;
     left: 0;

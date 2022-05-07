@@ -54,31 +54,48 @@
 	& p {
 		margin :0;
 	}
-		@for $i from 1 through 10 {
-			&:nth-child(#{$i}) {
-			animation-delay: 200ms * $i;
-			animation-fill-mode: both;
-			}
-		}
+	// ***--animation d'apparition des plats ---**
+
 }
 .cardMenu {
+	@for $i from 1 through 20 {
+		&:nth-child(#{$i}) {
+		animation: appear 1s both;	
+		animation-delay: 50ms * $i;
+			}
+	}
 	@include card; 
 	display: flex;
 	justify-content: space-between;
-	animation: appear 3s;	
+	height: 75px;
 	&__price {
 		width: 100%;
 		margin : 15px;
+		// overflow: hidden;
+		// text-overflow: ellipsis;
+		// white-space: nowrap;
+	
 		& h2 {
 			font-size: 20px;
-			margin: 0;		
+			margin: 0;	
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		
 		}
 		&-text {
 			display: flex;
 			justify-content: space-between;
-			& p:nth-child(2) {
-				font-weight: bold;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			& p:first-child {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				width: 75%;
 			}
+
 		}
 	}
 	&__check {
@@ -89,9 +106,17 @@
 		border-radius: 0 15px 15px 0;
 		color: white;
 		opacity: 0;
+		width: 0%;
 		
 	}
+	//  ***---- Animation du check qui tourne en hover + le décallage de l'anim ---***
 	&:hover {
+		.price-text{
+		& p:nth-child(2) {
+			font-weight: bold;
+			width: 10%;
+		}
+		}
 		cursor: pointer;
 		.cardMenu__check {
 			animation: checkitems 500ms forwards;
@@ -101,7 +126,7 @@
 		}
 	}
 }
-// Surlignage
+// ---*** Surlignage entrée plat desserts ***--
 .p-target {
     border-bottom: 3px solid $tertiary-color;
 	width: 35px;	
