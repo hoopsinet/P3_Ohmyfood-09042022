@@ -40,9 +40,11 @@ ul {
     font-size: 27px;
     position: absolute;
     right: 15px;
+    &--menu {
     @include desktop {
         right: 30%;
     }
+}
 }
 .fas.fa-heart {
   color: transparent;
