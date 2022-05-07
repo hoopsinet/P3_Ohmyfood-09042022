@@ -2,6 +2,10 @@
     @include card; 
     position : relative;
     height: 240px;
+    @include tablette {
+        width: 40%;
+
+    }
     &__nouveau {
         background-color : $tertiary-color;
         position: absolute;

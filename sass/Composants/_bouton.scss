@@ -8,7 +8,13 @@ button {
     width: 50%;
     margin: auto;
     height: 40px;
-   &:hover {
+   @include tablette {
+        width: 25%;
+   }
+   @include desktop {
+        width: 17%;
+   }
+    &:hover {
         transform: scale(1,1.1);
         background: linear-gradient(lighten($secondary-color, 5%), lighten($primary-color, 5%));
    } 

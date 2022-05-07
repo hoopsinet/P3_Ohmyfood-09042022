@@ -14,9 +14,15 @@
 	display: flex;
 	padding-top: 30px;
 	padding-bottom: 10px;
+	@include desktop {
+		justify-content: center;
+	}
 		& h1 {
 			padding-left: 5%;
 			font-size : 27px;
+			@include desktop {
+				padding: 0;
+			}
 		}
 	}
 }
@@ -41,12 +47,16 @@
 
 .menu {
 	padding : 0 5%;
+	@include desktop {
+		width: 40%;
+		margin: auto;
+	}
 	& p {
 		margin :0;
 	}
 		@for $i from 1 through 10 {
 			&:nth-child(#{$i}) {
-			animation-delay: 100ms * $i;
+			animation-delay: 200ms * $i;
 			animation-fill-mode: both;
 			}
 		}
@@ -62,10 +72,12 @@
 	&__price-text {
 		display: flex;
 		justify-content: space-between;
+
 	& p:nth-child(2) {
 		font-weight: bold;
 	}
 	}
+
 }
 // Surlignage
 .p-target {

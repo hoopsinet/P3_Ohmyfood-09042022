@@ -5,6 +5,17 @@ body {
 .contenuPrincipal {
     padding : 0 15px;
     padding-bottom: 30px;
+    @include desktop {
+        max-width: 1080px;
+        margin: auto;
+    }
+    & ul {
+        @include tablette {
+            display: flex;
+            justify-content: space-around;
+        }
+
+    }
 }
 
 h1 {
@@ -29,6 +40,9 @@ ul {
     font-size: 27px;
     position: absolute;
     right: 15px;
+    @include desktop {
+        right: 30%;
+    }
 }
 .fas.fa-heart {
   color: transparent;
