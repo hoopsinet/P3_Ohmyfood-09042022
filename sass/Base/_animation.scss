@@ -22,7 +22,16 @@
         transform: scale(0)
     }
 }
-    
+@keyframes checkitems {
+    from {
+        opacity: 1;
+        width: 0%;
+    }
+    to {
+        opacity: 1;
+        width: 10%;
+    }
+}
 
 .spinnerloader {
     background-color: $tertiary-color;
@@ -51,8 +60,7 @@
     width: 100px;
     border: 5px dotted $primary-color;
     border-radius: 50%;
-    animation: spinner-cercle 3s cubic-bezier(1,-0.32, 0.38, 1.07) infinite;
-   
+    animation: spinner-cercle 3s cubic-bezier(1,-0.32, 0.38, 1.07) infinite;  
 }
 
 .spinner-3points {

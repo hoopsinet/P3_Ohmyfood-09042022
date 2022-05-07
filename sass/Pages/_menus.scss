@@ -91,11 +91,12 @@
 		opacity: 0;
 		
 	}
-	:hover {
+	&:hover {
+		cursor: pointer;
 		.cardMenu__check {
-			opacity: 1;
+			animation: checkitems 500ms forwards;
 			& i {
-
+			animation: spinner-cercle 500ms linear;
 			}
 		}
 	}
