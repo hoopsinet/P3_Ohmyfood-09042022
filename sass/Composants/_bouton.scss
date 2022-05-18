@@ -8,6 +8,7 @@ button {
     width: 50%;
     margin: auto;
     height: 40px;
+    
    @include tablette {
         width: 25%;
    }
@@ -17,6 +18,8 @@ button {
     &:hover {
         transform: scale(1.07);
         background: linear-gradient(lighten($secondary-color, 5%), lighten($primary-color, 5%));
+        transition: all 400ms ease-out
+      
    } 
 }
 .direction {
