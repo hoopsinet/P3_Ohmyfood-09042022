@@ -3,8 +3,6 @@ body {
 }
 
 .contenuPrincipal {
-    padding : 0 15px;
-    padding-bottom: 30px;
     @include desktop {
         max-width: 1080px;
         margin: auto;

@@ -4,7 +4,7 @@
   "description": "P3_Ohmyfood",
   "main": "index.js",
   "scripts": {
-   "sass": "sass --watch ./sass/main.scss:css/styles.css --style compressed",
+    "sass": "sass --watch ./sass/main.scss:css/styles.css --style compressed",
     "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
@@ -17,5 +17,8 @@
     "url": "https://github.com/hoopsinet/P3_Ohmyfood-09042022/issues"
   },
   "homepage": "https://github.com/hoopsinet/P3_Ohmyfood-09042022#readme",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "autoprefixer": "^10.4.7"
+  }
 }
